@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <nav>
-          <img src={ironhackLogo} alt="ironhack-logo" />
-          <img src={menuLogo} alt="" />
+          <img src={ironhackLogo} className="Ironhack" alt="ironhack-logo" />
+          <img src={menuLogo} className="Menu" alt="" />
         </nav>
-        <div>
+        <div className="Text">
           <h1>Say hello to ReactJS</h1>
           <p>
             You will learn a Frontend framework from scratch, to become a Ninka

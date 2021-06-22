@@ -63,3 +63,29 @@ nav{
   margin-left: 20px;
 }
 
+.Menu{
+position: absolute;
+bottom : 580px;
+left: 1320px;
+}
+.Ironhack{
+position: absolute;
+bottom: 550px;
+}
+.Text{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  position:absolute;
+  text-align: left;
+  right: 700px;
+}
+.Text h1{
+  font-size: 80px;
+}
+.Text span{
+  background-color: antiquewhite;
+  color: #1f2535;
+  text-align: center;
+  width: 150px;
+}

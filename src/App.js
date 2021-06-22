@@ -6,6 +6,30 @@ import icon2 from "./assets/images/icon2.png";
 import icon3 from "./assets/images/icon3.png";
 import icon4 from "./assets/images/icon4.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Cards from "./Cards.js";
+
+const cards = [
+  {
+    img: icon1,
+    title: "Declarative",
+    description: "React makes it painless to create interactives UIs.",
+  },
+  {
+    img: icon2,
+    title: "Components",
+    description: "Build encapsulated components that manage their state.",
+  },
+  {
+    img: icon3,
+    title: "Single-Way",
+    description: "A set of immutable values are passed to the component's.",
+  },
+  {
+    img: icon4,
+    title: "JSX",
+    description: "Statically-typed, designed to run on modern browsers.",
+  },
+];
 
 function App() {
   return (
@@ -25,26 +49,13 @@ function App() {
         </div>
       </header>
       <section className="Second-half">
-        <div className="Second-half-divs">
-          <img src={icon1} alt="Declarative" />
-          <h3>Declarative</h3>
-          <p>React makes it painless to create interactives UIs.</p>
-        </div>
-        <div className="Second-half-divs">
-          <img src={icon2} alt="Components" />
-          <h3>Components</h3>
-          <p>Build encapsulated components that manage their state.</p>
-        </div>
-        <div className="Second-half-divs">
-          <img src={icon3} alt="Single-Way" />
-          <h3>Single-Way</h3>
-          <p>A set of immutable values are passed to the component's.</p>
-        </div>
-        <div className="Second-half-divs">
-          <img src={icon4} alt="JSX" />
-          <h3>JSX</h3>
-          <p>Statically-typed, designed to run on modern browsers.</p>
-        </div>
+        {cards.map((obj) => {
+          return <Cards
+          img = {obj.img}
+          title = {obj.title}
+          description= {obj.description}
+          />;
+        })}
       </section>
     </div>
   );

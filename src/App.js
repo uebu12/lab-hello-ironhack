@@ -50,11 +50,13 @@ function App() {
       </header>
       <section className="Second-half">
         {cards.map((obj) => {
-          return <Cards
-          img = {obj.img}
-          title = {obj.title}
-          description= {obj.description}
-          />;
+          return (
+            <Cards
+              img={obj.img}
+              title={obj.title}
+              description={obj.description}
+            />
+          );
         })}
       </section>
     </div>
